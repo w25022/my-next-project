@@ -5,6 +5,7 @@ import { TOP_NEWS_LIMIT } from "@/app/_constants";
 import NewsList from "@/app/components/NewsList";
 import ButtonLink from "@/app/components/ButtonLink";
 import { News } from "@/app/_libs/microcms";
+export const revalidate = 60;
 // type News ={
 //   id:string;
 //   title:string;

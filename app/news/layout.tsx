@@ -2,14 +2,16 @@ import Hero from "@/app/components/Hero";
 import Sheet from "../components/sheet";
 
 type Props = {
-    children : React.ReactNode;
+  children: React.ReactNode;
 };
 
-export default function NewsLayout ({ children }: Props) {
-    return (
-        <>
-        <Hero title="News" sub="ニュース"/>
-        <Sheet> {children} </Sheet>
-        </>
-    );
+export const revalidate = 60;
+
+export default function NewsLayout({ children }: Props) {
+  return (
+    <>
+      <Hero title="News" sub="ニュース" />
+      <Sheet> {children} </Sheet>
+    </>
+  );
 }
